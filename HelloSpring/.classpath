@@ -23,5 +23,6 @@
 	<classpathentry kind="lib" path="/Users/xuyanjun/Desktop/workspace/java-learning/libs/spring-framework-4.1.6.RELEASE/libs/spring-webmvc-4.1.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/Users/xuyanjun/Desktop/workspace/java-learning/libs/spring-framework-4.1.6.RELEASE/libs/spring-webmvc-portlet-4.1.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/Users/xuyanjun/Desktop/workspace/java-learning/libs/spring-framework-4.1.6.RELEASE/libs/spring-websocket-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/xuyanjun/Desktop/workspace/java-learning/libs/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
