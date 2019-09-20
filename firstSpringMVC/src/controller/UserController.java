@@ -13,6 +13,8 @@
 
 package controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -105,5 +107,22 @@ public class UserController {
 //			model.addAttribute("uname", uname);
 //			return "register";
 //		}
-//	}
+//	
+	/*
+	 * 登录操作
+	 */
+	@RequestMapping("/login")
+	public String login(UserForm user, HttpSession session, Model model) {
+		String uname = user.getUname();
+		String upass = user.getUpass(); 
+		if ("zhangsan".equals(uname)
+				&& "123456".equals(upass)) {
+			session.setAttribute("u", uname);
+			return "main";
+		} else {
+			model.addAttribute("uname", uname);
+			model.addAttribute("upass", upass);
+			return "login";
+		}
+	}
 }
