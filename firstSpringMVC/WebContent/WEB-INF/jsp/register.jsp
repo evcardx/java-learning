@@ -11,12 +11,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <style type="text/css">
 	.textSize{
 		width: 100pt;
-		height: 15pt
+		height: 15pt;
 	}
 </style>
 <title>注册画面</title>
 </head>
 <body>
+	<div>${success} </div>
 	<form action="user/register" method="post" name="registForm">
 		<table 
 		border=1 
