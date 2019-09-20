@@ -17,13 +17,33 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		width: 120px;
 		height: 25px;
 	}
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		margin: 10px 10px auto;
+		background-image: url(images/bb.jpg);
+	}
 	</style>
+	<script type="text/javascript">
+	//确定按钮
+	function gogo(){
+		document.forms[0].submit();
+	}
+	//取消按钮
+	function cancel(){
+		document.forms[0].action = "";
+	}
+	</script>
   </head>
   <body>
   	<form action="user/login" method="post">
 	<table>
 		<tr>
-			<td colspan="2">Login</td>
+			<td colspan="2"><img src="images/login.gif"></td>
 		</tr>
 		<tr>
 			<td>姓名：</td>
@@ -35,11 +55,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</tr>
 		<tr>
 			<td colspan="2">
-				<input type="button" value="登录" >
-				<input type="button" value="重置" >
+				<input type="image" src="images/ok.gif" onclick="gogo()" >
+				<input type="image" src="images/cancel.gif" onclick="cancel()" >
 			</td>
 		</tr>
 	</table>
+	${messageError }
 	</form>
   </body>
 </html>

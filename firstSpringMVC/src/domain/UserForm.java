@@ -17,5 +17,22 @@ public class UserForm {
 	private String upass;
 	private String reupass;
 	
-	
+	public String getUname() {
+		return uname;
+	}
+	public void setUname(String name) {
+		this.uname = name;
+	}
+	public String getUpass() {
+		return upass;
+	}
+	public void setUpass(String upass) {
+		this.upass = upass;
+	}
+	public String getReupass() {
+		return reupass;
+	}
+	public void setReupass(String reupass) {
+		this.reupass = reupass;
+	}
 }
