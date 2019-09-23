@@ -6,11 +6,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<base href="<%=basePath%>"> 
+<base href="<%=basePath%>">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>主页面</title>
+<title>Insert title here</title>
 </head>
 <body>
-	欢迎${sessionScope.u.uname }访问该系统。
+	<form action="my/formatter" method="post">
+    		商品名称：<input type="text" name="goodsname"/><br>
+    		商品价格：<input type="text" name="goodsprice"/><br>
+    		商品数量：<input type="text" name="goodsnumber"/><br>
+    		商品日期：<input type="text" name="goodsdate"/>（yyyy-MM-dd）<br>
+    		<input type="submit" value="提交"/>
+    </form>
 </body>
 </html>

@@ -6,11 +6,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<base href="<%=basePath%>"> 
+<base href="<%=basePath%>">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>主页面</title>
+<title>Insert title here</title>
 </head>
 <body>
-	欢迎${sessionScope.u.uname }访问该系统。
+    您创建的商品信息如下：<br>
+  <!-- 使用EL表达式取出model中goods的信息 -->
+    商品名为：${goods.goodsname }， 
+    商品价格为：${goods.goodsprice }，
+    商品数量为：${goods.goodsnumber }。
 </body>
 </html>

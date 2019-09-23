@@ -13,9 +13,10 @@
 
 package spitter;
 
-import java.sql.Date;
+import java.util.Date;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 
 public class Spittle {
@@ -59,18 +60,10 @@ public class Spittle {
 		return EqualsBuilder.reflectionEquals(this, that, "id", "time");
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@Override
+	public int hashCode() {
+		return HashCodeBuilder.reflectionHashCode(this, "id", "time");
+	}
 	
 	
 	
